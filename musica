@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Música</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== SECCIÓN: MUSICA ===== -->
+  <header class="page-header">
+    <h1>Musica</h1>
+  </header>
+
+  <section class="content-section">
+    <div class="card-layout">
+      <!-- Foto -->
+      <div class="card-photo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mot%C3%B6rhead_-_2004.jpg/800px-Mot%C3%B6rhead_-_2004.jpg"
+          alt="Motörhead en vivo"
+        />
+      </div>
+
+      <!-- Texto + Video -->
+      <div class="card-text">
+        <h2>Motorhead</h2>
+        <p>
+          Motörhead fue una banda británica de rock and roll fundada en 1975 en Londres por
+          el bajista, vocalista y compositor, Lemmy Kilmister y disuelta en 2015 tras la muerte
+          de este.
+        </p>
+
+        <!-- Rectángulo celeste con video de YouTube -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/aSsqavYIgNc"
+            title="Motörhead – Ace of Spades"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón volver a página principal -->
+    <a href="index.html" class="btn btn-center">Página principal</a>
+  </section>
+
+</body>
+</html>
