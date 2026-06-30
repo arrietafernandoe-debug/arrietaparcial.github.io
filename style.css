@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Chivo:wght@300;400;700&display=swap');
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #7d7d7d;
+  color: #1a1a1a;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p, li, span, a {
+  font-family: 'Chivo', sans-serif;
+}
+
+/* ===== HEADER / HERO BANNER ===== */
+.page-header {
+  background-color: #111111;
+  padding: 36px 60px 32px;
+}
+
+.page-header h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+/* ===== CONTENT SECTION ===== */
+.content-section {
+  background-color: #848484;
+  padding: 60px;
+}
+
+.card-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== PHOTO ===== */
+.card-photo img {
+  width: 100%;
+  max-width: 380px;
+  display: block;
+  object-fit: cover;
+  filter: grayscale(15%);
+}
+
+/* ===== TEXT BLOCK ===== */
+.card-text h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  color: #111111;
+  margin-bottom: 16px;
+}
+
+.card-text p {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: #1a1a1a;
+  margin-bottom: 18px;
+  line-height: 1.75;
+}
+
+.card-text p strong {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+.btn-center {
+  display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+}
+
+/* ===== VIDEO EMBED ===== */
+.video-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  background-color: #00e5ff;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 28px 24px;
+  }
+
+  .content-section {
+    padding: 36px 24px;
+  }
+
+  .card-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .card-photo img {
+    max-width: 100%;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+  }
+}
